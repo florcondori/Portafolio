@@ -1,0 +1,10 @@
+header{
+	height:  80vh;
+	width: 100%;	
+}
+.navbar{
+	position: absolute;
+	background: transparent;
+    border: none;
+	width: 100%;
+}
