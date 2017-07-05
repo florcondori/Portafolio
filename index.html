@@ -4,39 +4,85 @@
 		<meta charset="UTF-8">
 		<title>Portafolio</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/utils.css">
+		<link rel="stylesheet" href="assets/css/reStyle.css">
 		<link rel="stylesheet" href="assets/css/main.css">
 	</head>
 	<body>
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
-				    <span class="sr-only">Toggle navigation</span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-				  </button>
-				  <a class="navbar-brand" href="#">Logo</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Logo</a>
 				</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="menu-collapse">
 				    <ul class="nav navbar-nav">
-				        <li><a href="#">Home</a></li>
-				        <li><a href="#">About</a></li>
-				        <li><a href="#">Skills</a></li>
-				        <li><a href="#">Portfolio</a></li>
+				        <li><a href="#home">Home</a></li>
+				        <li><a href="#about">About</a></li>
+				        <li><a href="#skills">Skills</a></li>
+				        <li><a href="#portafolio">Portfolio</a></li>
 				        <li><a href="#">Contact</a></li>
 				    </ul>
 				      
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
+				</div>
+			</div>
 		</nav>
-		<header>
-			
-		</header>
 
+		<section id="home" class="container-fluid">
+			<div class="bg-home">
+				<div class="mr-10 text-center">
+					<h1 class="fs-5">Flor Condori</h1>
+					<h4>Desarrollador Fron-end Jr </h4>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3 mt-5">
+					<h3 class="text-uppercase fs-4 mb-0">about</h3>
+					<h3 class="text-uppercase fs-4 mt-0 text-yellow">me</h3>
+				</div>			
+				<div class="col-xs-12 col-sm-5 mv-2">
+				<p> <strong>Hola; soy Flor, Diseñadora Frond-end Jr. con Bachiller en Ingenieria de Sistemas</strong></p>
+				<p>Con conocimiento  e interés por el desarrollo y diseño web de interfaces adaptables(Responsive Design). Responsable, autodidacta y comprometida al 100% cuando se trata de cumplir una meta grupal</p>
+				</div>
+				<div class=".hidden-xs col-sm-4">
+					<img src="" alt="foto" class="img-rounded">
+				</div>
+			</div>
+			<div class="mv-2">
+				<a href="" class="circle"><i class="fa fa-facebook"></i></a>
+				<a href="" class="circle"><i class="fa fa-github"></i></a>
+				<a href="" class="circle"><i class="fa fa-linkedin"></i></a>
+			</div>
+		</section>
+
+		<section id="portafolio" class="container">
+			<div class="row">
+				<a class="col-xs-12 col-sm-4 col-md-3">
+					<div class="proyecto">Proyecto1</div>
+				</a>
+				<a class="col-xs-12 col-sm-4 col-md-3">
+					<div class="proyecto">Proyecto2</div>
+				</a>
+				<a class="col-xs-12 col-sm-4 col-md-3">
+					<div class="proyecto">Poryecto3</div>
+				</a>
+				<a class="col-xs-12 col-sm-4 col-md-3">
+					<div class="proyecto">Proyecto4</div>
+				</a>
+			</div>
+		</section>
+			
+		
 		<script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
 		<script src="assets/js/vendor/bootstrap.min.js"></script>
 		<script src="assets/js/app.js"></script>

@@ -2,9 +2,39 @@ header{
 	height:  80vh;
 	width: 100%;	
 }
-.navbar{
-	position: absolute;
-	background: transparent;
-    border: none;
-	width: 100%;
+
+.bg-home{
+	background: lightgrey;
+	/* background-image: url("../img/fondo2.jpeg"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-left: -14px;
+    margin-right: -14px;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.circle{
+	background: darkgray;
+    padding: 9px 13px;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 7px;
+}
+.proyecto{
+	height: 300px;
+	background-color: lightgray;
+	text-align: center;
+	font-size: 3rem;
+}
+div.row>a{
+	padding: 12px;
+}
+#about h3{
+	font-weight: 700;
+}
+#about{
+	height: 50vh;
 }
