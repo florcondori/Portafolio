@@ -11,7 +11,7 @@
 .mb-0{
 	margin-bottom: 0;
 }
-.mt-5{
+.mt-7{
 	margin-top: 7rem;
 }
 .fs-4{
@@ -22,4 +22,7 @@
 }
 .text-yellow{
 	color: #FFF433;
+}
+.bold{
+	font-weight: 700;
 }

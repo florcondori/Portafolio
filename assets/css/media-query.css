@@ -1,0 +1,5 @@
+@media(min-width: 768px){
+	#about div.row{
+		margin-top: 10rem;
+	}
+}
