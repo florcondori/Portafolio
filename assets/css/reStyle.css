@@ -38,3 +38,9 @@ button.close{
 	padding: 4px;
 	opacity: 1;
 }
+button.close:hover, button.close:focus{
+	background-color: black;
+	color: white;
+	opacity: 1;
+	outline: 0;
+}

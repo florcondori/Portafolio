@@ -11,8 +11,12 @@
 .mb-0{
 	margin-bottom: 0;
 }
-.mt-7{
+.mv-7{
 	margin-top: 7rem;
+	margin-bottom: 7rem;
+}
+.pt-8{
+	padding-top: 8rem;
 }
 .fs-4{
 	font-size: 4rem;

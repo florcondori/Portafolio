@@ -3,6 +3,8 @@ $(_=>{
 
 	$(".close").on("click", (e)=>{
 		$(".proyecto-social").slideUp(500);
+		console.log($(".proyecto").find("div.active"));
+
 	});
 
 	const container = $("#portafolio").children().eq(1).children();
@@ -39,6 +41,7 @@ const mostratDetalles = (id)=>{
 	const use = proyecto.use.join(",");
 	const img = $(".proyecto-social").children().eq(1).children();
 	const divDescription = $(".proyecto-social").children().eq(2);
+	divDescription.empty();
 
 	img.prop("src","assets/img/"+proyecto.img);
 	divDescription.append(`<h3>${proyecto.title}</h3>`);
