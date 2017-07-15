@@ -1,7 +1,10 @@
+
 .navbar{
 	position: fixed;
 	background-color: black;
     border: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 	width: 100%;
 	z-index: 2;
 }
@@ -12,21 +15,20 @@
 	background-color: transparent;
 }
 .nav{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	float: right;
 }
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: white;
 }
-
-.navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-brand{
+.navbar-default .navbar-nav>li>a{
 	color: white;
 }
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-brand:hover{
-	color: #FFF433;
+.navbar-default .navbar-nav>li>a:hover .text-nav{
+	visibility: visible;
+	color: aqua;
+}
+.navbar-default .navbar-nav>li>a:hover i{
+	visibility: hidden;
 }
 button.close{
 	position: absolute;
@@ -40,8 +42,8 @@ button.close{
 	opacity: 1;
 }
 button.close:hover, button.close:focus{
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 	opacity: 1;
 	outline: 0;
 }

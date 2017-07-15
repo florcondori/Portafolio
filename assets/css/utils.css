@@ -9,8 +9,8 @@
 .fs-4{
 	font-size: 4rem;
 }
-.fs-5{
-	font-size: 5rem;
+.fs-7{
+	font-size: 7rem;
 }
 .fs-1{
 	font-size: 1.5rem;
@@ -30,4 +30,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.left{
+	left: -5px;
 }

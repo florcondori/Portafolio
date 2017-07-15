@@ -4,7 +4,7 @@ var proyectos = [
 	 git: "https://github.com/florcondori/ProyectoFinal-LabCar",
 	 img: "labcar.png",
 	 title: "LabCar",
-	 description:"Pagina web para una empresa de taxis.",
+	 description:"Pagina web para una empresa de taxis. Permite ubicación y trazado de ruta.",
 	 use: ["Bootstrap", "API de Google Maps"]
 	},
 	{id: 1,
@@ -12,7 +12,7 @@ var proyectos = [
 	 git:"https://github.com/florcondori/Freelancer",
 	 img: "frelancer.jpg",
 	 title: "FreeLancer",
-	 description: "Template basado en Bootstrap",
+	 description: "Template basado en Bootstrap. Efc",
 	 use:["Flexbox", "Grid System"]
 	},
 	{id: 2,

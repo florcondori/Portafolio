@@ -1,18 +1,17 @@
 'use strict';
 $(_=>{
 
+	const row = $("#portafolio").children().eq(1).children();
+
 	$(".close").on("click", (e)=>{
-		$(".proyecto-descripcion").slideUp(500);
-		console.log($(".active"));
-		$("#portafolio").css("height","100vh");
+		$(e.target).parents().find("#portafolio").css("height","100vh");
+		$(e.target).parents().find(".proyecto-descripcion").slideUp(500);
+		row.children().css("opacity", "1");
 
 	});
 
-	const container = $("#portafolio").children().eq(1).children();
-
 	proyectos.forEach( (obj)=>{
 		const ancla = $(`<a class='col-xs-12 col-sm-6 col-md-4 proyecto' id='${obj.id}'></a>`);
-		const img = $(`<img src='assets/img/${obj.img}' alt='${obj.title}'>`);
 		const bgProyecto = $("<div class='bg-proyecto'></div>");
 		const title = $(`<p>${obj.title}</p>`);
 
@@ -25,10 +24,9 @@ $(_=>{
 
 
 		bgProyecto.append(title);
-		/*ancla.append(img);*/
 		ancla.append(bgProyecto);
 
-		container.append(ancla);
+		row.append(ancla);
 	});
 });
 
@@ -45,7 +43,7 @@ const mostratDetalles = (id)=>{
 	img.prop("src","assets/img/"+proyecto.img);
 	divDescription.append(`<h3>${proyecto.title}</h3>`);
 	divDescription.append(`<p>${proyecto.description}</p>`);
-	divDescription.append("<p>Para lo cual se utilizo: </p>");
+	divDescription.append("<p>Tecnologías utilizadas: </p>");
 	divDescription.append(`<p>${use}</p>`);
 	divDescription.append(`<a href='${proyecto.url}' target="_blank" class="go-site">Ver Demo</a>`);
 	divDescription.append(`<a href='${proyecto.git}' target="_blank" class="go-site">Ver en Github</a>`);
@@ -54,11 +52,10 @@ const mostratDetalles = (id)=>{
 
 const div = $(".skills");
 
-div.animate({opacity: 1});
-div.animate({height: '+=100px', width: '+=100px', top: '+=100px'}, 500);
+/*div.animate({height: '+=100px', width: '+=100px', top: '+=100px'}, 500);
 div.animate({height: '-=100px', width: '-=100px', left: '+=100px'}, 500);
 div.animate({height: '+=100px', width: '+=100px', top: '-=100px'}, 500);
-div.animate({height: '-=100px', width: '-=100px', left: '-=100px'}, 500);
+div.animate({height: '-=100px', width: '-=100px', left: '-=100px'}, 500);*/
 
 
 
