@@ -25,7 +25,7 @@ $(_=>{
 
 
 		bgProyecto.append(title);
-		ancla.append(img);
+	/*	ancla.append(img);*/
 		ancla.append(bgProyecto);
 
 		row.append(ancla);

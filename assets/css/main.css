@@ -171,11 +171,12 @@ h3{
     filter: grayscale(100%);
 }
 .bg-proyecto{
-	position: absolute;
-	top: 12px;
-	left: 12px;
-	right: 12px;
-	bottom: 12px;
+/* 	position: absolute;
+top: 12px;
+left: 12px;
+right: 12px;
+bottom: 12px; */
+	border: 1px solid black;
 	color: black;
     background-color: transparent;
 	display: flex;
