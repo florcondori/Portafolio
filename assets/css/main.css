@@ -164,13 +164,20 @@ h3{
 	text-align: center;
 	transition:all .5s ease-in-out;
 }
-.proyecto.active .bg-proyecto{
-	border: 1px solid yellow;
+.proyecto img{
+	width: 100%;
+	height: 100%;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 .bg-proyecto{
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	right: 12px;
+	bottom: 12px;
 	color: black;
-    border: 1px solid black;
-    background-color: white;
+    background-color: transparent;
 	display: flex;
 	justify-content: center;
 	align-items: center;

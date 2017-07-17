@@ -12,6 +12,7 @@ $(_=>{
 
 	proyectos.forEach( (obj)=>{
 		const ancla = $(`<a class='col-xs-12 col-sm-6 col-md-4 proyecto' id='${obj.id}'></a>`);
+		const img = $("<img src='assets/img/bg-proyecto.jpg'/>");
 		const bgProyecto = $("<div class='bg-proyecto'></div>");
 		const title = $(`<p>${obj.title}</p>`);
 
@@ -24,6 +25,7 @@ $(_=>{
 
 
 		bgProyecto.append(title);
+		ancla.append(img);
 		ancla.append(bgProyecto);
 
 		row.append(ancla);
