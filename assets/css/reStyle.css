@@ -1,10 +1,8 @@
-
 .navbar{
 	position: fixed;
 	background-color: black;
     border: none;
     padding-top: 2rem;
-    padding-bottom: 2rem;
 	width: 100%;
 	z-index: 2;
 }
@@ -15,7 +13,8 @@
 	background-color: transparent;
 }
 .nav{
-	float: right;
+	display: flex;
+	justify-content: space-around;
 }
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: white;
@@ -29,6 +28,9 @@
 }
 .navbar-default .navbar-nav>li>a:hover i{
 	visibility: hidden;
+}
+.navbar-collapse.in {
+	overflow-x: hidden;
 }
 button.close{
 	position: absolute;

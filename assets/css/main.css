@@ -40,11 +40,12 @@ h3{
 .text-nav{
 	visibility: hidden;
     font-weight: 700;
+    font-size: 12px;
 }
 .nav.navbar-nav i{
 	position: absolute;
     visibility: visible;
-    font-size: 2.6rem;
+    font-size: 2rem;
     top: 50%;
     left: 50%;
     margin-top: -13px;
@@ -99,6 +100,9 @@ h3{
     padding: 9px 13px;    
 }
 /*Style de section skill*/
+#skills{
+	height: auto;
+}
 .skills{
 	margin-top: 3.5rem;
 	margin-bottom: 4rem;
@@ -150,6 +154,9 @@ h3{
 	margin-bottom: 7px;
 }
 /*Style de section portafolio*/
+#portafolio, #contact{
+	height: auto;
+}
 .proyecto{
 	font-size: 3rem;
 	height: 225px;
@@ -173,8 +180,9 @@ h3{
 .proyecto-descripcion{
 	display: none;	
 	color: black;	
-	height: 480px;
+	height: auto;
 	padding-top: 8rem;
+	padding-bottom: 8rem;
 }
 .go-site{
 	padding: 7px 10px;

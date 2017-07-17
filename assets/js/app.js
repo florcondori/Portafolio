@@ -4,7 +4,7 @@ $(_=>{
 	const row = $("#portafolio").children().eq(1).children();
 
 	$(".close").on("click", (e)=>{
-		$(e.target).parents().find("#portafolio").css("height","100vh");
+		/*$(e.target).parents().find("#portafolio").css("height","100vh");*/
 		$(e.target).parents().find(".proyecto-descripcion").slideUp(500);
 		row.children().css("opacity", "1");
 
@@ -19,7 +19,7 @@ $(_=>{
 			$(".proyecto-descripcion").slideDown(600);
 			ancla.siblings().css("opacity", "0.7");
 			mostratDetalles(ancla.prop("id"));
-			$("#portafolio").css("height","150vh");
+			/*$("#portafolio").css("height","150vh");*/
 		});
 
 

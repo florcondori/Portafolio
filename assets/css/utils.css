@@ -25,11 +25,6 @@
 .bold{
 	font-weight: 700;
 }
-.flex-beetween{
-	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 .left{
 	left: -5px;
 }
