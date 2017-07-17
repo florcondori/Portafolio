@@ -1,5 +1,5 @@
 .navbar{
-	position: fixed;
+/* 	position: fixed; */
 	background-color: black;
     border: none;
     padding-top: 2rem;
@@ -21,6 +21,9 @@
 }
 .navbar-default .navbar-nav>li>a{
 	color: white;
+	transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
 }
 .navbar-default .navbar-nav>li>a:hover .text-nav{
 	visibility: visible;

@@ -5,8 +5,7 @@ $(_=>{
 
 	$(".close").on("click", (e)=>{
 		/*$(e.target).parents().find("#portafolio").css("height","100vh");*/
-		$(e.target).parents().find(".proyecto-descripcion").slideUp(500);
-		row.children().css("opacity", "1");
+		$(e.target).parents().find(".proyecto-descripcion").slideUp(500);		row.children().css("opacity", "1");
 
 	});
 
@@ -18,7 +17,6 @@ $(_=>{
 
 		ancla.on("click", (e)=>{
 			$(".proyecto-descripcion").slideDown(600);
-			ancla.siblings().css("opacity", "0.7");
 			mostratDetalles(ancla.prop("id"));
 			/*$("#portafolio").css("height","150vh");*/
 		});

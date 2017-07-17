@@ -4,6 +4,7 @@
 	}
 	.navbar{
 		padding-bottom: 2rem;
+		border-radius: 0;
 	}
 	.nav.navbar-nav i{
     	font-size: 2.6rem;
@@ -23,7 +24,8 @@
 		margin-bottom: 0;
 		width: 250px;
 	}
-	#skills, #contact, #portafolio{
+	#skills,
+	#contact{
 		height: 100vh;
 	}
 }
