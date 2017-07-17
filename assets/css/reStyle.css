@@ -34,17 +34,15 @@
 }
 button.close{
 	position: absolute;
-	top: -4rem;
-	right: 23rem;
-	background-color: black;
-	color: white;
+    top: -26px;
+    right: 13%;
+	color: black;
 	font-size: 8rem;	
 	font-weight: 100;
 	padding: 4px;
 	opacity: 1;
 }
 button.close:hover, button.close:focus{
-	background-color: white;
 	color: black;
 	opacity: 1;
 	outline: 0;
