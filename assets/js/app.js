@@ -41,12 +41,16 @@ const mostratDetalles = (id)=>{
 	divDescription.empty();
 
 	img.prop("src","assets/img/"+proyecto.img);
-	divDescription.append(`<h3>${proyecto.title}</h3>`);
+	divDescription.append(`<h3>${proyecto.title}:</h3>`);
 	divDescription.append(`<p>${proyecto.description}</p>`);
-	divDescription.append("<p>Tecnologías utilizadas: </p>");
+	divDescription.append("<h4>Funcionalidad Demo:</h4>");
+	divDescription.append(`<p>${proyecto.demo}</p>`);
+	divDescription.append("<h4>Tecnologías utilizadas: </h4>");
 	divDescription.append(`<p>${use}</p>`);
-	divDescription.append(`<a href='${proyecto.url}' target="_blank" class="go-site">Ver Demo</a>`);
-	divDescription.append(`<a href='${proyecto.git}' target="_blank" class="go-site">Ver en Github</a>`);
+	const divGoSite = $("<div class='div-go-site'></div>");
+	divGoSite.append(`<a href='${proyecto.url}' target="_blank" class="go-site">Ver Demo</a>`);
+	divGoSite.append(`<a href='${proyecto.git}' target="_blank" class="go-site">Ver en Github</a>`);
+	divDescription.append(divGoSite);
 }
 
 

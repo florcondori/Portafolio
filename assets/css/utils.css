@@ -6,6 +6,12 @@
 	margin-top: 7rem;
 	margin-bottom: 7rem;
 }
+.mb-0{
+	margin-bottom: 0;
+}
+.mt-40{
+	margin-top: 40%;
+}
 .fs-4{
 	font-size: 4rem;
 }

@@ -1,5 +1,9 @@
+.nav{
+	display: flex;
+	justify-content: space-around;
+	padding: 1.5rem;
+}
 .navbar{
-/* 	position: fixed; */
 	background-color: black;
     border: none;
     padding-top: 2rem;
@@ -12,15 +16,12 @@
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
 	background-color: transparent;
 }
-.nav{
-	display: flex;
-	justify-content: space-around;
-}
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: white;
 }
 .navbar-default .navbar-nav>li>a{
 	color: white;
+	padding: 0;
 	transition: 1s ease-in-out;
 	-webkit-transition: 1s ease-in-out;
 	-o-transition: 1s ease-in-out;

@@ -25,7 +25,7 @@ footer{
 	padding: 1.5rem 0;
 }
 section{
-	height: 100vh;
+	height: auto;
 }
 img{
 	height: 320px;
@@ -54,6 +54,7 @@ h3{
 /*Style de section home*/
 #home{
 	position: relative;
+	height: 100vh;
 }
 #home img{
 	width: 100%;
@@ -85,7 +86,7 @@ h3{
 }
 /*Style de section about*/
 #about div.row p:first-child{
-	font-size: 2.3rem;
+	font-size: 2rem;
 }
 #about a.circle:hover{
 	background-color: #FFF433;
@@ -186,19 +187,23 @@ bottom: 12px; */
 	height: 100%;
 }
 .proyecto-descripcion{
+	background: whitesmoke;
 	display: none;	
 	color: black;	
 	height: auto;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 }
+.div-go-site{
+	display: flex;
+	justify-content: space-around;
+}
 .go-site{
-	padding: 7px 10px;
-	color: black;
-	font-size: 2rem;
+	border: 2px solid #7D3C98;
+	color: #7D3C98;
 	font-weight: 700;
-	text-decoration: none;
-	margin: 2rem 1rem 2rem 0;
+	margin-top: 2rem;
+	padding: 7px 20px;
 }
 .go-site:hover{
 
