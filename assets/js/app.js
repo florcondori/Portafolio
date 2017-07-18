@@ -4,25 +4,22 @@ $(_=>{
 	const row = $("#portafolio").children().eq(1).children();
 
 	$(".close").on("click", (e)=>{
-		/*$(e.target).parents().find("#portafolio").css("height","100vh");*/
 		$(e.target).parents().find(".proyecto-descripcion").slideUp(500);		row.children().css("opacity", "1");
 
 	});
 
 	proyectos.forEach( (obj)=>{
 		const ancla = $(`<a class='col-xs-12 col-sm-6 col-md-4 proyecto' id='${obj.id}'></a>`);
-		const img = $("<img src='assets/img/bg-proyecto.jpg'/>");
+		const img = $(`<img src='assets/img/${obj.logo}'/>`);
 		const bgProyecto = $("<div class='bg-proyecto'></div>");
 		const title = $(`<p>${obj.title}</p>`);
 
 		ancla.on("click", (e)=>{
 			$(".proyecto-descripcion").slideDown(600);
 			mostratDetalles(ancla.prop("id"));
-			/*$("#portafolio").css("height","150vh");*/
 		});
 
-
-		bgProyecto.append(title);
+		bgProyecto.append(img);
 	/*	ancla.append(img);*/
 		ancla.append(bgProyecto);
 
@@ -53,8 +50,6 @@ const mostratDetalles = (id)=>{
 	divDescription.append(divGoSite);
 }
 
-
-const div = $(".skills");
 
 /*div.animate({height: '+=100px', width: '+=100px', top: '+=100px'}, 500);
 div.animate({height: '-=100px', width: '-=100px', left: '+=100px'}, 500);

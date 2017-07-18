@@ -168,14 +168,9 @@ h3{
 	transition:all .5s ease-in-out;
 }
 .proyecto img{
-	width: 100%;
-	height: 100%;
-	-webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-.proyecto:hover .bg-proyecto{
-	box-shadow: 0 5px 29px #eee;
-    transform: scale(1.3);
+	height: auto;
+/* 	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
 }
 .bg-proyecto{
 /* 	position: absolute;
@@ -211,9 +206,19 @@ bottom: 12px; */
 	margin-top: 2rem;
 	padding: 7px 20px;
 }
+.go-site:active, .go-site:visited{
+	border: 2px solid #7D3C98;
+	color: #7D3C98;
+}
 .go-site:hover{
 	background-color: #7D3C98;
 	color: white;
+}
+a.proyecto:first-child img{
+	width: 30%;
+}
+a.proyecto img[src*="Lyft_logo.svg.png"]{
+	width: 25%;
 }
 /*Style de Contact*/
 #contact i{
@@ -234,6 +239,11 @@ bottom: 12px; */
 	color: inherit;
 }
 #contact .go-site:hover i{
+	background-color: transparent;
+}
+
+#contact .go-site:active i,
+#contact .go-site:visited i{
 	background-color: transparent;
 }
 
