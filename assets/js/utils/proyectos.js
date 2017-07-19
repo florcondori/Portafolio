@@ -23,7 +23,7 @@ var proyectos = [
 	 url: "https://florcondori.github.io/ProyectoFinal-LabCar/",
 	 git: "https://github.com/florcondori/ProyectoFinal-LabCar",
 	 img: "labcar.png",
-	 logo: "logo.png",
+	 logo: "labcar_logo.png",
 	 title: "LabCar",
 	 description: "Pagina web para una empresa de taxis",
 	 demo:"Encuentra ubicación del usuario, traza ruta y muestra tarifa de viaje.",

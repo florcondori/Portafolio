@@ -1,6 +1,6 @@
 'use strict';
 $(_=>{
-
+	
 	const row = $("#portafolio").children().eq(1).children();
 
 	$(".close").on("click", (e)=>{
