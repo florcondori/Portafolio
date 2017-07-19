@@ -1,3 +1,6 @@
+body::-webkit-scrollbar-thumb{
+	background: black;
+}
 header{
 	height:  80vh;
 	width: 100%;	
@@ -106,9 +109,6 @@ h3{
     padding: 9px 13px;    
 }
 /*Style de section skill*/
-#skills{
-	height: auto;
-}
 .skills{
 	margin-top: 3.5rem;
 	margin-bottom: 4rem;
@@ -157,9 +157,6 @@ h3{
 	margin-bottom: 7px;
 }
 /*Style de section portafolio*/
-#portafolio, #contact{
-	height: auto;
-}
 .proyecto{
 	font-size: 3rem;
 	height: 225px;
@@ -199,20 +196,20 @@ bottom: 12px; */
 	justify-content: space-around;
 }
 .go-site{
-	border: 2px solid #7D3C98;
-	color: #7D3C98;
+	border: 1px solid black;
+	color: black;
 	display: inline-block;
 	font-weight: 700;
 	margin-top: 2rem;
 	padding: 7px 20px;
 }
 .go-site:active, .go-site:visited{
-	border: 2px solid #7D3C98;
-	color: #7D3C98;
+	border: 1px solid black;
+	color: black;
 }
 .go-site:hover{
-	background-color: #7D3C98;
-	color: white;
+	border: 1px solid #7D3C98;
+	color: #7D3C98;
 }
 a.proyecto:first-child img{
 	width: 30%;
@@ -224,7 +221,7 @@ a.proyecto img[src*="Lyft_logo.svg.png"]{
 #contact i{
 	font-size: 2rem;
 	color: black;
-	background-color: white;
+	background-color: transparent;
 	margin: 0 4px;
 }
 #contact span{

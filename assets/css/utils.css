@@ -12,6 +12,9 @@
 .mt-40{
 	margin-top: 40%;
 }
+.mt-5{
+	margin-top: 5px;
+}
 .fs-4{
 	font-size: 4rem;
 }
@@ -30,5 +33,8 @@
 }
 .left{
 	left: -5px;
+}
+.bg-gray-light{
+	background-color: #eeeeee;
 }
 

@@ -16,7 +16,9 @@
 		font-size: 3rem;
 	}
 	#skills,
-	#contact{
+	#contact,
+	#about,
+	#portafolio{
 		height: 100vh;
 	}
 	.navbar-nav>li {

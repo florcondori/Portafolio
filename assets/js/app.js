@@ -4,7 +4,8 @@ $(_=>{
 	const row = $("#portafolio").children().eq(1).children();
 
 	$(".close").on("click", (e)=>{
-		$(e.target).parents().find(".proyecto-descripcion").slideUp(500);		row.children().css("opacity", "1");
+		$(e.target).parents().find(".proyecto-descripcion").slideUp(500);
+		$("#portafolio").css("height", "100vh");
 
 	});
 
@@ -16,6 +17,7 @@ $(_=>{
 
 		ancla.on("click", (e)=>{
 			$(".proyecto-descripcion").slideDown(600);
+			$("#portafolio").css("height","auto");
 			mostratDetalles(ancla.prop("id"));
 		});
 
@@ -25,6 +27,7 @@ $(_=>{
 
 		row.append(ancla);
 	});
+
 });
 
 const mostratDetalles = (id)=>{

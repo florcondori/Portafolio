@@ -1,14 +1,16 @@
 .nav{
 	display: flex;
 	justify-content: space-around;
-	padding: 1.5rem;
 }
 .navbar{
 	background-color: black;
     border: none;
-    padding-top: 2rem;
 	width: 100%;
 	z-index: 2;
+}
+.navbar-nav{
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .navbar-default .navbar-brand{
 	color: white;
@@ -36,6 +38,12 @@
 }
 .navbar-default .navbar-nav>li>a:hover i{
 	visibility: hidden;
+}
+.navbar-collapse{
+	padding: 2rem 0;
+}
+.navbar-header{
+	padding: 1rem 0;
 }
 .navbar-collapse.in {
 	overflow-x: hidden;
