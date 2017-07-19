@@ -12,6 +12,9 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
+.navbar-brand{
+	font-family: "Bitter";
+}
 .navbar-default .navbar-brand{
 	color: white;
 	font-weight: bold;

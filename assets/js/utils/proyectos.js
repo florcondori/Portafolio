@@ -33,7 +33,7 @@ var proyectos = [
 	 url: "https://florcondori.github.io/ProyectoFinal-Lyft/",
 	 git:"https://github.com/florcondori/ProyectoFinal-Lyft",
 	 img: "lyft.png",
-	 logo: "Lyft_logo.svg.png",
+	 logo: "lyft_logo_negro.png",
 	 title: "Lyft",
 	 description:"Replica de la pagina web de Lyft",
 	 demo: "Efecto de scroll, validación de formulario",
