@@ -40,4 +40,7 @@
 .bg-gray-light{
 	background-color: #eeeeee;
 }
+.m-auto{
+	margin: 0 auto;
+}
 

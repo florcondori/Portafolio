@@ -5,24 +5,23 @@ $(_=>{
 
 	$(".close").on("click", (e)=>{
 		$(e.target).parents().find(".proyecto-descripcion").slideUp(500);
-		$("#portafolio").css("height", "100vh");
 
 	});
 
 	proyectos.forEach( (obj)=>{
-		const ancla = $(`<a class='col-xs-12 col-sm-6 col-md-4 proyecto' id='${obj.id}'></a>`);
-		const img = $(`<img src='assets/img/${obj.logo}'/>`);
+		const ancla = $(`<a class='col-xs-12 col-sm-6 col-md-4 proyecto' id='${obj.id}' href='#portafolio'></a>`);
+		const imgNegro = $(`<img src='assets/img/${obj.logoNegro}' class='logo'/>`);
+		const img = $(`<img src='assets/img/${obj.logo}' class='img-oculto'/>`);
 		const bgProyecto = $("<div class='bg-proyecto'></div>");
 		const title = $(`<p>${obj.title}</p>`);
-
+	
 		ancla.on("click", (e)=>{
 			$(".proyecto-descripcion").slideDown(600);
-			$("#portafolio").css("height","auto");
 			mostratDetalles(ancla.prop("id"));
 		});
 
+		bgProyecto.append(imgNegro);
 		bgProyecto.append(img);
-	/*	ancla.append(img);*/
 		ancla.append(bgProyecto);
 
 		row.append(ancla);

@@ -3,17 +3,13 @@ const lastScroll = 0;
 window.addEventListener('scroll', function(){
 	var scrollNumber = window.pageYOffset || document.body.scrollTop;
 	console.log(scrollNumber);
-		if(scrollNumber>lastScroll){
-			document.getElementById("nav-header").classList.remove("header-in");
-			document.getElementById("nav-header").style.opacity = 0;
+		if(scrollNumber>$(window).height()-70){
+
+			$(".navbar").css("background","black").show(700);
+			$(".navbar").css("opacity","0,8");
 			console.log("arriba");
 		}else{
-			document.getElementById("nav-header").classList.add("header-in");
-			document.getElementById("nav-header").style.opacity = 1;
-			console.log("abajo");
-			if(scrollNumber<=3){
-				document.getElementById("nav-header").classList.remove("header-in");
-				document.getElementById("nav-header").style.opacity = 1;
-			}
+			$(".navbar").css("background","transparent");
+			$(".navbar").css("opacity","1");
 		}
 });

@@ -1,4 +1,7 @@
 @media(min-width: 768px){
+	.pos-absolute .row div:first-child{
+		margin-top: 14%;
+	}
 	.nav{
 		float: right;
 	}
@@ -15,9 +18,7 @@
 		font-size: 3rem;
 	}
 	#skills,
-	#contact,
-	#about,
-	#portafolio{
+	#about{
 		height: 100vh;
 	}
 	.navbar-nav>li {
