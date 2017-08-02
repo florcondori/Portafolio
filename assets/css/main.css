@@ -1,12 +1,10 @@
-body::-webkit-scrollbar-thumb{
-	background: black;
-}
 header{
 	height:  80vh;
 	width: 100%;	
 }
 a{
 	cursor: pointer;
+	color: inherit;
 }
 a:hover, a:visited, a:link, a:active{
 	text-decoration: none;
@@ -38,6 +36,9 @@ h3, h1{
 }
 h3{
 	color: black;
+}
+h4{
+	font-weight: 500;
 }
 /*Style navbar*/
 .text-nav{
@@ -183,6 +184,7 @@ h3{
 }
 .bg-proyecto:hover .img-oculto{
 	display: block;
+	transform: scale(1.2);
 }
 .bg-proyecto:hover .logo{
 	display: none;
@@ -242,9 +244,11 @@ a.proyecto img[src*="lyft_logo_negro.png"]{
 #contact .go-site:hover i{
 	background-color: transparent;
 }
-
 #contact .go-site:active i,
 #contact .go-site:visited i{
 	background-color: transparent;
+}
+#contact a:hover span{
+	color: #7D3C98;
 }
 

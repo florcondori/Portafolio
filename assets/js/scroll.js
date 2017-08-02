@@ -5,7 +5,7 @@ window.addEventListener('scroll', function(){
 	console.log(scrollNumber);
 		if(scrollNumber>$(window).height()-70){
 
-			$(".navbar").css("background","black").show(700);
+			$(".navbar").css("background","rgba(0,0,0,0.8)").show(700);
 			$(".navbar").css("opacity","0,8");
 			console.log("arriba");
 		}else{
