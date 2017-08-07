@@ -184,7 +184,7 @@ h4{
 }
 .bg-proyecto:hover .img-oculto{
 	display: block;
-	transform: scale(1.2);
+	transform: scale(1.07);
 }
 .bg-proyecto:hover .logo{
 	display: none;
@@ -208,6 +208,8 @@ h4{
 	font-weight: 700;
 	margin-top: 2rem;
 	padding: 7px 20px;
+	-webkit-transition: .3s all linear;
+	transition: .3s all linear;
 }
 .go-site:active, .go-site:visited{
 	border: 1px solid black;
@@ -241,8 +243,9 @@ a.proyecto img[src*="lyft_logo_negro.png"]{
 #contact a.go-site i{
 	color: inherit;
 }
-#contact .go-site:hover i{
+#contact a:hover i{
 	background-color: transparent;
+	color: #7D3C98;
 }
 #contact .go-site:active i,
 #contact .go-site:visited i{

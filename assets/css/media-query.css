@@ -25,4 +25,8 @@
 	    margin-left: 10px;
 	    margin-right: 10px;
 	}
+	#about p:last-child{
+		padding-left: 10rem;
+		padding-right: 10rem;
+	}
 }
