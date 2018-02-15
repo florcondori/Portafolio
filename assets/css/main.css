@@ -17,8 +17,8 @@ p{
 	font-size: 1.8rem;
 }
 img[alt="flor condori"]{
-	width: 150px;
-	height: 150px;
+	width: auto;
+	height: 270px;
 }
 footer{
 	background-color: black;
